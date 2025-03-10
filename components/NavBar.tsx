@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { AppShell, Center, Header, Image, Menu } from '@mantine/core'
 import Link from 'next/link'
-import Marquee from 'react-fast-marquee'
+// import Marquee from 'react-fast-marquee'
 
 const Links = [
   { href: '/', label: 'Home' },
@@ -18,62 +18,30 @@ const Links = [
 
 const NavBar = () => {
   return (
-    <header>
-      <div className="navbar mx-auto w-full bg-blue-400 bg-opacity-20 p-1 shadow-md">
-        <div className="flex items-center justify-between space-x-4 lg:space-x-10">
-          <div className="flex lg:w-0 lg:flex-1">
-            <Link href="/">
+    <header className='bg-black py-3 px-2 flex items-center gap-4'>
+
+      <Link href="/">
               <a className="flex items-stretch">
                 <Image
                   src="RVCE NEW-HEADER_onlyLogo.png"
                   alt="logo"
-                  className="logo h-full w-14"
+                  className="logo h-full w-16 invert"
                 />
               </a>
-            </Link>
-          </div>
-          <nav className="text-m hidden space-x-10 font-medium md:flex">
+      </Link>
+
+      <div className="navbar h-fit   mx-auto w-[90%] flex items-center">
+        <div className="flex items-center mx-auto px-5">
+          <nav className="text-m text-white items-center  hidden space-x-10 font-medium md:flex">
             {Links.map((link) => (
               <Link href={link.href} key={link.label}>
-                <a className="nav-link text-black-500 hover:border-b-3 font-sans hover:text-blue-700">
+                <a className="nav-link my-3 font-sans hover:bg-gradient-to-tl from-blue-600 via-blue-400 to-blue-800">
                   {link.label}
                 </a>
               </Link>
             ))}
           </nav>
-          <div className="hidden items-center justify-end space-x-8 md:flex-1 lg:flex lg:w-0">
-            <Menu
-              control={
-                <button
-                  className="bg-black-100 rounded-lg p-2 text-gray-600"
-                  type="button"
-                  name="Mobile Navigation Menu"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="h-5 w-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4 6h16M4 12h16M4 18h16"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </button>
-              }
-            >
-              <Menu.Label>
-                <p className="font-sans text-blue-400 underline">
-                  Download Links
-                </p>
-              </Menu.Label>
-            </Menu>
-          </div>
+
           <div className="lg:hidden">
             <Menu
               control={
@@ -117,50 +85,76 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <Marquee className="marquee bg-blue-300">
-        <div className="content1">
-          <span className="ml-80 font-bold text-yellow-300">
-          <a href=""  download>
-          Website Under Construction
-          </a>
-          </span>{' '}
-  
-        </div>
-      </Marquee>
+
+      <div className="hidden items-center justify-end space-x-8 md:flex-1 lg:flex lg:w-0">
+            <Menu
+              control={
+                <button
+                  className="bg-black-100 rounded-lg p-2 text-white-600 invert"
+                  type="button"
+                  name="Mobile Navigation Menu"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 6h16M4 12h16M4 18h16"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </button>
+              }
+            >
+              <Menu.Label>
+                <p className="font-sans text-blue-400 underline">
+                  Download Links
+                </p>
+              </Menu.Label>
+            </Menu>
+      </div>
+
       <style jsx>{`
         .navbar {
           animation: fadeIn 1s ease-in-out;
         }
+        
         .logo {
           transition: transform 0.3s;
         }
         .logo:hover {
           transform: scale(1.1);
         }
+        
         .nav-link {
-          position: relative;
-          transition: color 0.3s, border-bottom 0.3s;
+            position: relative;
+            transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out, padding 0.3s ease-in-out;
         }
-        .nav-link::before {
-          content: '';
-          position: absolute;
-          width: 0%;
-          height: 3px;
-          bottom: -2px;
-          left: 50%;
-          background-color: #1e40af;
-          transition: all 0.3s ease-in-out;
+
+        .nav-link:hover {
+            border-radius: 25px;
+            padding: 8px 10px; 
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 10px 20px;
+            color: black;
+            font-weight: 600;
         }
-        .nav-link:hover::before {
-          width: 100%;
-          left: 0;
+
         }
+        
         .marquee {
           margin-top: 1rem;
         }
         @keyframes fadeIn {
           from {
-            opacity: 0;
+            opacity: 0.5;
           }
           to {
             opacity: 1;
