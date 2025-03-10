@@ -22,7 +22,7 @@ export default function Index() {
   return (
     <>
      
-      <section className="body-font m-0 text-gray-600">
+      <section className="body-font m-0 text-gray-60">
         {/* <div className="bar">
           <span className="bar_content">
             All of the students register for pre-tutorial conference. Amount to be paid : 590 (Includes GST)
@@ -89,88 +89,74 @@ export default function Index() {
             </div>
           </div>
         </header>
-        <div className="mt-4 w-full rounded-lg bg-blue-200 bg-opacity-50 py-4 px-6 text-center text-black shadow-lg">
-          <p className="text-lg font-semibold">
+        <div className="mt-4 w-full rounded-lg bg-[#141414]   py-4 px-6 text-center text-black shadow-lg">
+          <p className="text-lg  text-blue-200 font-semibold">
             Organized by{' '}
-            <span className="text-blue-700">RV College of Engineering</span>
+            <span className="text-white">RV College of Engineering</span>
             </p>
         </div>
-        <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
-          <div className="rounded-lg bg-red-100 p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-red-200">
-            <svg
-              className="mx-auto mb-4 h-12 w-12 text-red-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M3 7h18M3 11h18M3 15h18M3 19h18"
-              />
-            </svg>
-            <h3 className="text-2xl font-bold">November 20-22, 2025</h3>
-            <p>Date</p>
-          </div>
-          <div className="rounded-lg bg-green-100 p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-green-200">
-            <svg
-              className="mx-auto mb-4 h-12 w-12 text-green-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <h3 className="text-2xl font-bold">RV College of Engineering</h3>
-            <p>Venue</p>
-          </div>
-          <div className="rounded-lg bg-blue-100 p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-blue-200">
-            <svg
-              className="mx-auto mb-4 h-12 w-12 text-blue-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M3 7h18M3 11h18M3 15h18M3 19h18"
-              />
-            </svg>
 
-            <h3 className="text-2xl font-bold">8 successful editions of CSITSS</h3>
 
-            
+        <section>
+          <div className="mt-6 flex flex-wrap justify-between">
+
+            <div className='flex gap-4 w-[100%] px-12 py-6 border my-2 border-[#1d1d7c] border-t-[14px] rounded-lg bg-[#1f2124] text-white md:w-[49%] hover:shadow-lg hover:bg-[#191a31]'>
+              <div className='bg-[#333333] h-fit w-fit p-3 rounded-md'>
+                <svg className="fill-blue-600" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                  <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 className='font-bold text-2xl my-1'>November 20-22, 2025</h3>
+                <p className='text-sm'>Three days of engaging sessions.</p>
+                <div className='bg-[#1d1d7c] opacity-80 w-fit h-fit mt-3 text-sm rounded-full px-3 py-1'>Date</div>
+              </div>
+            </div>
+
+            <div className='flex gap-4 w-[100%] px-12 py-8 border my-2 border-t-[#661010] border-t-[14px] rounded-lg bg-[#1f2124] text-white md:w-[49%] hover:bg-[#1e1211]'>
+              <div className='bg-[#333333] h-fit w-fit p-3 rounded-md'>
+              <svg className="fill-[#a81010]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+              </div>
+              <div>
+                <h3 className='font-bold text-2xl my-1'>RV College of Engineering</h3>
+                <p className='text-sm'>Bangalore, Karnataka, India.</p>
+                <div className='bg-[#661010] opacity-80 w-fit h-fit mt-3 text-sm rounded-full px-3 py-1'>Venue</div>
+              </div>
+            </div>
+
+            <div className='flex gap-4 w-[100%] px-12 py-8 border my-2 border-t-[#432E54] border-t-[14px] rounded-lg bg-[#1f2124] text-white md:w-[49%] hover:bg-[#271c27]'>
+              <div className='bg-[#333333] h-fit w-fit p-3 rounded-md'>
+              <svg className="fill-[#6c458c]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+              </svg>
+              </div>
+              <div>
+                <h3 className='font-bold text-2xl my-1'>8 successful editions of CSITSS</h3>
+                <p className='text-sm'>Established in 2017.</p>
+                <div className='bg-[#432E54] opacity-80 w-fit h-fit mt-3 text-sm rounded-full px-3 py-1'>Track Record</div>
+              </div>
+            </div>
+
+            <div className='flex gap-4 w-[100%] px-12 py-8 border my-2 border-t-yellow-900 border-t-[14px] rounded-lg bg-[#1f2124] text-white md:w-[49%] hover:bg-[#222214]'>
+              <div className='bg-[#333333] h-fit w-fit p-3 rounded-md'>
+              <svg className="fill-yellow-900" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+              </svg>
+              </div>
+              <div>
+                <h3 className='font-bold text-2xl my-1'>Global Participation</h3>
+                <p className='text-sm'>Researchers from across the globe.</p>
+                <div className='bg-yellow-900 opacity-80 w-fit h-fit mt-3 text-sm rounded-full px-3 py-1'>Track Record</div>
+              </div>
+            </div>
           </div>
-          <div className="rounded-lg bg-yellow-100 p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-yellow-200">
-            <svg
-              className="mx-auto mb-4 h-12 w-12 text-yellow-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 12l8 8 8-8-8-8-8 8z"
-              />
-            </svg>
-            <h3 className="text-2xl font-bold">Global Participation</h3>
-            <p>Researchers from Around the World</p>
-          </div>
-        </div>
+        </section>
+
 
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
@@ -234,7 +220,7 @@ export default function Index() {
                 </p>
 
                 <a
-                  className="inline-flex transform items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                  className="inline-flex transform items-center rounded border bg-blue-600 px-8 py-3 text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
                   href="https://cmt3.research.microsoft.com/CSITSS2024"
                 >
                   <span className="text-sm font-medium">Submit Paper</span>
@@ -320,7 +306,7 @@ export default function Index() {
             {/* Action buttons */}
             <div className="animate-fadeIn mt-8 flex flex-col justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-4">
               <a
-                className="inline-flex items-center justify-center rounded-lg border border-indigo-600 bg-indigo-600 px-8 py-3 text-white transition-colors duration-300 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                className="inline-flex items-center justify-center rounded-lg border bg-blue-600 px-8 py-3 text-white transition-colors duration-300 hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
                 href="https://goo.gl/maps/sXWGV9iXqQRwz2PJ9"
               >
                 <span className="text-sm font-medium">Open Maps</span>
@@ -340,7 +326,7 @@ export default function Index() {
                 </svg>
               </a>
               <a
-                className="inline-flex items-center justify-center rounded-lg border border-indigo-600 bg-indigo-600 px-8 py-3 text-white transition-colors duration-300 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                className="inline-flex items-center justify-center rounded-lg border border-blue-600 bg-blue-600 px-8 py-3 text-white transition-colors duration-300 hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
                 href="HOTELS.pdf"
               >
                 <span className="text-sm font-medium">

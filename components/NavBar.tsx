@@ -18,7 +18,7 @@ const Links = [
 
 const NavBar = () => {
   return (
-    <header className='bg-black py-3 px-2 flex items-center gap-4'>
+    <header className='bg-[#1f2124] py-3 px-2 flex items-center lg:gap-4 justify-between'>
 
       <Link href="/">
               <a className="flex items-stretch">
@@ -30,9 +30,9 @@ const NavBar = () => {
               </a>
       </Link>
 
-      <div className="navbar h-fit   mx-auto w-[90%] flex items-center">
+      <div className="navbar h-12  hidden mx-auto w-[90%] md:flex items-center">
         <div className="flex items-center mx-auto px-5">
-          <nav className="text-m text-white items-center  hidden space-x-10 font-medium md:flex">
+          <nav className="text-m text-white items-center  hidden space-x-10 font-sm md:flex">
             {Links.map((link) => (
               <Link href={link.href} key={link.label}>
                 <a className="nav-link my-3 font-sans hover:bg-gradient-to-tl from-blue-600 via-blue-400 to-blue-800">
@@ -41,12 +41,14 @@ const NavBar = () => {
               </Link>
             ))}
           </nav>
+        </div>
+      </div>
 
-          <div className="lg:hidden">
+      <div className="md:hidden">
             <Menu
               control={
                 <button
-                  className="rounded-lg bg-gray-100 p-2 text-gray-600"
+                  className="rounded-lg  p-2 text-white"
                   type="button"
                   name="Mobile Navigation Menu"
                 >
@@ -82,8 +84,6 @@ const NavBar = () => {
                 </p>
               </Menu.Label>
             </Menu>
-          </div>
-        </div>
       </div>
 
       <div className="hidden items-center justify-end space-x-8 md:flex-1 lg:flex lg:w-0">
